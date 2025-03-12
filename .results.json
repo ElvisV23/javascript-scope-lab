@@ -1,0 +1,267 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 13,
+    "passes": 7,
+    "pending": 0,
+    "failures": 6,
+    "start": "2025-03-12T04:38:22.386Z",
+    "end": "2025-03-12T04:38:22.870Z",
+    "duration": 484
+  },
+  "tests": [
+    {
+      "title": "is declared using const",
+      "fullTitle": "index.js burgers is declared using const",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
+      "fullTitle": "index.js burgers is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared using let",
+      "fullTitle": "index.js featuredDrink is declared using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a string",
+      "fullTitle": "index.js featuredDrink is a string",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is set to the value 'Strawberry Milkshake'",
+      "fullTitle": "index.js featuredDrink is set to the value 'Strawberry Milkshake'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'The JavaShake' to equal 'Strawberry Milkshake'",
+        "showDiff": true,
+        "actual": "The JavaShake",
+        "expected": "Strawberry Milkshake",
+        "stack": "AssertionError: expected 'The JavaShake' to equal 'Strawberry Milkshake'\n    at Context.<anonymous> (test\\indexTest.js:36:32)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js addBurger is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
+      "fullTitle": "index.js addBurger when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false",
+        "showDiff": true,
+        "actual": "true",
+        "expected": "false",
+        "stack": "AssertionError: Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false\n    at Context.<anonymous> (test\\indexTest.js:51:49)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "has a condition with the value of true",
+      "fullTitle": "index.js if statement has a condition with the value of true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the use of an if statement whose condition has the value of true: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "creates a block-scoped variable named anotherNewBurger using the const keyword and assigns it the value 'Maple Bacon Burger'",
+      "fullTitle": "index.js if statement creates a block-scoped variable named anotherNewBurger using the const keyword and assigns it the value 'Maple Bacon Burger'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "uses the .push() array method to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array",
+      "fullTitle": "index.js if statement uses the .push() array method to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js changeFeaturedDrink is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, changes the value of the featuredDrink variable to 'The JavaShake'",
+      "fullTitle": "index.js changeFeaturedDrink when called, changes the value of the featuredDrink variable to 'The JavaShake'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the featuredDrink variable to have the value 'Strawberry Milkshake' before the changeFeaturedDrink function is called: expected 'The JavaShake' to equal 'Strawberry Milkshake'",
+        "showDiff": true,
+        "actual": "The JavaShake",
+        "expected": "Strawberry Milkshake",
+        "stack": "AssertionError: Expected the featuredDrink variable to have the value 'Strawberry Milkshake' before the changeFeaturedDrink function is called: expected 'The JavaShake' to equal 'Strawberry Milkshake'\n    at Context.<anonymous> (test\\indexTest.js:78:39)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "is set to the value 'Strawberry Milkshake'",
+      "fullTitle": "index.js featuredDrink is set to the value 'Strawberry Milkshake'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'The JavaShake' to equal 'Strawberry Milkshake'",
+        "showDiff": true,
+        "actual": "The JavaShake",
+        "expected": "Strawberry Milkshake",
+        "stack": "AssertionError: expected 'The JavaShake' to equal 'Strawberry Milkshake'\n    at Context.<anonymous> (test\\indexTest.js:36:32)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
+      "fullTitle": "index.js addBurger when called, uses the .push() array method to add newBurger, which has the value of 'Flatburger', to the burgers array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false",
+        "showDiff": true,
+        "actual": "true",
+        "expected": "false",
+        "stack": "AssertionError: Expected the burgers array to not have the string 'Flatburger' as one of its elements before the addBurger function is called: expected true to equal false\n    at Context.<anonymous> (test\\indexTest.js:51:49)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "has a condition with the value of true",
+      "fullTitle": "index.js if statement has a condition with the value of true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the use of an if statement whose condition has the value of true: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected the use of an if statement whose condition has the value of true: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)/\n    at Context.<anonymous> (test\\indexTest.js:59:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "creates a block-scoped variable named anotherNewBurger using the const keyword and assigns it the value 'Maple Bacon Burger'",
+      "fullTitle": "index.js if statement creates a block-scoped variable named anotherNewBurger using the const keyword and assigns it the value 'Maple Bacon Burger'",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected anotherNewBurger to be a block-scoped variable that is declared inside of the if statement using const and has the value 'Maple Bacon Burger': expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*const[ \\n]+anotherNewBurger[ \\n]*=[ \\n]*['\"`]Maple Bacon Burger['\"`](.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:63:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "uses the .push() array method to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array",
+      "fullTitle": "index.js if statement uses the .push() array method to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/",
+        "showDiff": false,
+        "actual": "// Step 1: Declare global variables\r\nconst burgers = ['Hamburger', 'Cheeseburger'];\r\nlet featuredDrink = 'Strawberry Milkshake';\r\n\r\n// Step 2: Define the addBurger function\r\nfunction addBurger() {\r\n  const newBurger = 'Flatburger'; // Function-scoped variable\r\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\r\n}\r\n\r\n// Step 3: Write an if statement with a true condition\r\nif (true) { // Condition is true\r\n  const anotherNewBurger = 'Maple Bacon Burger'; // Block-scoped variable\r\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\r\n}\r\n\r\n// Step 4: Define changeFeaturedDrink function\r\nfunction changeFeaturedDrink() {\r\n  featuredDrink = 'The JavaShake'; // Change the value of featuredDrink\r\n}\r\n\r\n// Test calls\r\naddBurger();\r\nchangeFeaturedDrink();\r\n\r\nconsole.log(burgers); // Expected: ['Hamburger', 'Cheeseburger', 'Flatburger', 'Maple Bacon Burger']\r\nconsole.log(featuredDrink); // Expected: 'The JavaShake'",
+        "stack": "AssertionError: Expected the use of the .push() array method, inside of the if statement, to add anotherNewBurger, which has the value of 'Maple Bacon Burger', to the burgers array: expected '// Step 1: Declare global variables\\r\\nconst burgers = [\\'Hamburger\\', \\'Cheeseburger\\'];\\r\\nlet featuredDrink = \\'Strawberry Milkshake\\';\\r\\n\\r\\n// Step 2: Define the addBurger function\\r\\nfunction addBurger() {\\r\\n  const newBurger = \\'Flatburger\\'; // Function-scoped variable\\r\\n  burgers.push(newBurger); // Use .push() to add newBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 3: Write an if statement with a true condition\\r\\nif (true) { // Condition is true\\r\\n  const anotherNewBurger = \\'Maple Bacon Burger\\'; // Block-scoped variable\\r\\n  burgers.push(anotherNewBurger); // Use .push() to add anotherNewBurger to burgers array\\r\\n}\\r\\n\\r\\n// Step 4: Define changeFeaturedDrink function\\r\\nfunction changeFeaturedDrink() {\\r\\n  featuredDrink = \\'The JavaShake\\'; // Change the value of featuredDrink\\r\\n}\\r\\n\\r\\n// Test calls\\r\\naddBurger();\\r\\nchangeFeaturedDrink();\\r\\n\\r\\nconsole.log(burgers); // Expected: [\\'Hamburger\\', \\'Cheeseburger\\', \\'Flatburger\\', \\'Maple Bacon Burger\\']\\r\\nconsole.log(featuredDrink); // Expected: \\'The JavaShake\\'' to match /if\\(true\\)[ \\n]*\\{(.|\\n)*.push\\((.|\\n)+\\)(.|\\n)*\\}/\n    at Context.<anonymous> (test\\indexTest.js:68:21)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    },
+    {
+      "title": "when called, changes the value of the featuredDrink variable to 'The JavaShake'",
+      "fullTitle": "index.js changeFeaturedDrink when called, changes the value of the featuredDrink variable to 'The JavaShake'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "Expected the featuredDrink variable to have the value 'Strawberry Milkshake' before the changeFeaturedDrink function is called: expected 'The JavaShake' to equal 'Strawberry Milkshake'",
+        "showDiff": true,
+        "actual": "The JavaShake",
+        "expected": "Strawberry Milkshake",
+        "stack": "AssertionError: Expected the featuredDrink variable to have the value 'Strawberry Milkshake' before the changeFeaturedDrink function is called: expected 'The JavaShake' to equal 'Strawberry Milkshake'\n    at Context.<anonymous> (test\\indexTest.js:78:39)\n    at process.processImmediate (node:internal/timers:491:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "is declared using const",
+      "fullTitle": "index.js burgers is declared using const",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
+      "fullTitle": "index.js burgers is set to the value of an array that has the following 2 elements: 'Hamburger' and 'Cheeseburger'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is declared using let",
+      "fullTitle": "index.js featuredDrink is declared using let",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a string",
+      "fullTitle": "index.js featuredDrink is a string",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js addBurger is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "fullTitle": "index.js addBurger when called, creates a function-scoped variable named newBurger using the const keyword and assigns it the value 'Flatburger'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "is a function",
+      "fullTitle": "index.js changeFeaturedDrink is a function",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
